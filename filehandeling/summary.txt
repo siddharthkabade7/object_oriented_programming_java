@@ -1,0 +1,2 @@
+Total error message :4
+Total warnings :4

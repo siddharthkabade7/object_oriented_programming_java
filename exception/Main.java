@@ -8,6 +8,8 @@ public class Main {
         s.push(4);
 
         s.pop();
+        s.pop();
+        s.pop();    s
     }
     
 }

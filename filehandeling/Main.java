@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Main{
     public static void main(String[] args){
-        int errors=0,warnings=0;
+        int errors=0,warnings=0,info=0;
 
         try{
             FileReader fr = new FileReader("log.txt");
@@ -21,6 +21,20 @@ public class Main{
                 }
             }
             br.close();
+
+            BufferedWriter bw = new BufferedWriter(
+                new FileWriter("summary1.txt")
+            );
+
+            bw.write("Total error message :"+ errors);
+            bw.write("\nTotal warnings :"+warnings);
+
+            bw.close();
+
+            System.out.println("Summary written successfully..");
+               
+
+
             System.out.println("\nERRORS :"+errors);
             System.out.println("WARNINGS :"+warnings);
 

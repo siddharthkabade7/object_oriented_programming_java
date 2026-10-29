@@ -8,25 +8,25 @@ public class Main {
             throw new Exception("Invalid dimenssion");
            }
 
-           int C[][] = new int[A.length][B[0].length];
-           Multiplication[][] t = new Multiplication[A.length][B[0].length];
+           int C[][] = new int[A.length][B[0].length];  // declare resultant matrix
+           Multiplication[][] t = new Multiplication[A.length][B[0].length]; // declare thread array
 
-           for(int i=0;i<=A.length;i++){
+           for(int i=0;i<A.length;i++){ 
             for(int j=0;j<B[0].length;j++){
                 t[i][j]= new Multiplication();
                 t[i][j].matrixtask(A,B,C,i,j);
-                t[i][j].start();
+                t[i][j].start();  
             }
         }
         for(int i=0;i<A.length;i++){
             for(int j=0;j<B[0].length;j++){
-                t[i][j].join();
+                t[i][j].join();  // wait until one thread execucation complet
             }
            }
         
            for(int i=0;i<C.length;i++){
             for(int j=0;j<C[0].length;j++){
-                System.out.println(C[i][j] + " ");
+                System.out.print(C[i][j] + " ");
             }
             System.out.println();
            }
