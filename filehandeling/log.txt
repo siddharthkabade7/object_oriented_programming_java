@@ -1,0 +1,6 @@
+INFO: Program started
+ERROR: File not found
+WARNING: Low memory
+ERROR: Connection failed
+INFO: Program completed
+WARNING: Slow response

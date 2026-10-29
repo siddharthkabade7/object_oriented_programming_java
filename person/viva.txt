@@ -1,0 +1,30 @@
+ constructor : constructor is special member function which is used to initilize the object.
+              it has same name as class name and has no return type.
+
+type:
+     default                           parameterized                                 copy 
+ 
+ no arguments                           with arguments                           object
+
+
+** object 
+         it is an instance of class
+
+**  person p1 = new person("siddharth", 19);
+    what does the above statement do ?
+--> it create the object of person i.e p1  and initilize the parameter (name and age)
+
+** what is purpose of new keyword?
+--> new keyword create the object and return the reference of that object.
+
+** if we not define any constructor then java define default constructor by it self.
+
+
+**
+
+ If your teacher asks only five questions, prepare these first:
+1. Constructor: A special member used to initialize an object.
+2. Copy constructor: Creates a new object by copying values from an existing object.
+3. Constructor overloading: Defining multiple constructors with different parameter lists.
+4. new keyword: Creates an object and returns its reference.
+5. Default constructor: A no-argument constructor; Java supplies one automatically only when no constructor has been declared.

@@ -1,0 +1,14 @@
+method inheritance and polymorphisam
+
+run time poly --> overloading
+
+inheritance --> extend
+
+steps :
+
+   take scanner --> import java.util.scanner
+   scanner sc = new scanner(System.in);
+
+   then switch cases and method calling
+
+   in shape decide method and in circle and rectange exact method

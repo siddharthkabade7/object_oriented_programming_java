@@ -1,0 +1,26 @@
+bank.java contains 4 functions 
+1) add acc
+2) remove 
+3) add balance 
+4) withdraw amount
+
+** static int count is keep count of number of accounts added and remove
+
+steps to write bank.java
+
+1) import scanner class 
+2)create class bank 
+3) define name accnumber balance and static int count 
+4) method to add accounts 
+   in this we have to do what is necessery to add account..
+   like wise for remove addmoney and withdraw money method
+
+steps to write Main.java
+
+1) import scanner class 
+2) creat Main class
+    int this creat public static void main(string[] args)
+3) in this we have to write because         Scanner sc = new Scanner(System.in);
+                                     It allows your program to take input from the keyboard.
+4) then         bank[] b = new bank[5];
+         it is array of object bank and variable name is b                                   
