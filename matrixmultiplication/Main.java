@@ -13,30 +13,30 @@ public class Main {
             System.out.print("Enter coloums for B:");
             int c2 = sc.nextInt();
 
-                int[][] A = new int[r1][c1];
-                int[][] B = new int[r2][c2];
-
             
 
-
-            if (c1!=r2) {
+            if (r1 <= 0 || c1 <= 0 || r2 <= 0 || c2 <= 0) {
+                throw new Exception("Invalid matrix dimensions");
+            }
+            if (c1 != r2) {
                 throw new Exception("Matrix Multiplication Not Possibal invalid dimenssion ");
-            }else{
+            } 
+            int[][] A = new int[r1][c1];
+            int[][] B = new int[r2][c2];
+
                 System.out.println("Enter Matrix A elements :");
-                for(int i=0;i<r1;i++){
-                    for(int j=0;j<c1;j++){
-                        A[i][j]=sc.nextInt();
+                for (int i = 0; i < r1; i++) {
+                    for (int j = 0; j < c1; j++) {
+                        A[i][j] = sc.nextInt();
                     }
                 }
                 System.out.println("Enter Matrix B elements :");
-                for(int i=0;i<r2;i++){
-                    for(int j=0;j<c2;j++){
-                        B[i][j]=sc.nextInt();
+                for (int i = 0; i < r2; i++) {
+                    for (int j = 0; j < c2; j++) {
+                        B[i][j] = sc.nextInt();
                     }
                 }
-            }
-
-
+            
 
             int[][] C = new int[r1][c2];
             Multiplication[][] t = new Multiplication[A.length][B[0].length];// matrix of threads
